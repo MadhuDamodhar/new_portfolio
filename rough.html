@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu Damodhar's Portfolio</title>
+    <link rel="shortcut icon" href="/images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Navbar content -->
+    </nav>
+
+    <div class="wrapper">
+        <section>
+            <!-- Section content -->
+        </section>
+
+        <div id="about" class="about">
+            <section id="about-section" class="p-100 pb-6 bg-one-dark">
+                <div class="container">
+                    <div class="row d-flex align-items-end">
+                        <div class="col-md-6 text-center" data-aos="fade-up">
+                            <img src="images/hero-2.png" alt="Signature" class="img-fluid">
+                        </div>
+                        <div id="right-section" class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <h1 class="color-base">ABOUT ME !</h1>
+                            <h3 class="text-dark mb-4">My Real Life is Up to You? I am a <span class="color-base">Java Full-Stack Developer.</span></h3>
+                            <p class="text-dark" style="text-align: justify;">Motivated MCA student and aspiring Full Stack Java Developer with practical experience in Java Full Stack technologies through hands-on projects. Strong foundation in frontend and backend development, eager to contribute to innovative IT solutions. Graduating in 2025, actively seeking opportunities to apply skills and grow in a professional setting.</p>
+                            <div class="row">
+                                <div class="col-md-6 about-bullet">
+                                    <ul class="bullet-check">
+                                        <li>Employee Management System</li>
+                                        <li>Full Stack Todo Application</li>
+                                        <li>E-Commerce Website</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 about-bullet">
+                                    <ul class="bullet-check">
+                                        <li>Todo Application</li>
+                                        <li>Etc...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="wrap-button mt-50">
+                                <a href="MadhuDamodhar.resume.pdf" download class="btn btn-primary btn-medium btn-inline btn-fill mr-4">Resume ⤓</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="edu/skills" class="education-skills">
+            <div class="education-section">
+                <div class='education'>
+                    <!-- Education content -->
+                </div>
+            </div>
+            <div class="skills-section">
+                <h1 id='skill__heading'>Skills</h1>
+                <div class="skill-bars">
+                    <div class="bar" data-aos="fade-right">
+                        <div class="info">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- More skill bars with AOS attributes -->
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="projects">
+            <h1 class="project__heading">Projects</h1>
+            <div class="row1">
+                <div class="card" data-aos="fade-up">
+                    <div class="tools">
+                        <div class="circle">
+                            <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                            <span class="green box"></span>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <h5 class="card__title">Employee Management System</h5>
+                        <p class="card__text">Developed a comprehensive Employee Management System as a Java Full Stack project...</p>
+                        <div class="card__footer">
+                            <a target="_blank" class="btn btn-primary" href="https://ems-frontend-alpha.vercel.app/" class="card__link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More cards with AOS attributes -->
+            </div>
+        </div>
+
+        <div class="lower">
+            <div id="contact" class="contact">
+                <div class="contact__Image">
+                    <img src="images/hero.png" alt="profile picture" class="contact__img">
+                </div>
+                <div class="contact__form">
+                    <form id="contactForm" class="form">
+                        <p class="title">Contact Me</p>
+                        <p class="message" id="statusMessage">Please fill out the form below to discuss work opportunities.</p>
+                        <div class="flex">
+                            <label>
+                                <input class="input" type="text" name="to_name" placeholder="" required>
+                                <span>Name</span>
+                            </label>
+                            <label>
+                                <input class="input" type="email" name="from_name" placeholder="" required>
+                                <span>Email</span>
+                            </label>
+                        </div>  
+                        <label>
+                            <textarea rows="5" cols="7" class="input" name="message" placeholder="" required></textarea>
+                            <span>Message</span>
+                        </label>
+                        <button onclick="sendEmail()" class="submit">Submit</button>
+                        <p class="signin" id="thankYouMessage" style="display: none;">Thank you!</p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h5 style="text-align: center;">Copyrights © 2024 Madhu Damodhar, All Rights reserved</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

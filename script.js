@@ -1,4 +1,5 @@
 // Function to send the email
+
 function sendEmail() {
     emailjs.init("GZMwJaV9Gliwt4JNR");
 
@@ -31,3 +32,4 @@ function sendEmail() {
 
 // Initialize the sendEmail function
 sendEmail();
+
