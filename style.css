@@ -243,7 +243,11 @@ section .air.air4{
   background-color: white;    
      
 }
+.nav-btns{
+  display: flex;
+  gap: 10px;
 
+}
 .nav-links{
 	display: flex;
 	flex-direction: row;
@@ -353,6 +357,7 @@ home{
   border-radius: 60px;
  margin: -50px -120px 0px 0px ;
  object-fit: cover;
+ 
 }
 
 
@@ -971,7 +976,7 @@ gap: 20px;
   width: 16px;
   border-radius: 50%;
   left: 0px;
-  background-color:  #3586ff;
+  background-color:  #ffffff;
 }
 
 .message, 
@@ -1010,7 +1015,7 @@ gap: 20px;
   width: 100%;
   padding: 20px 05px 05px 10px;
   outline: 0;
-  border: 1px solid #3586ffcb;
+  border: 1px solid #ffffffcb;
   border-radius: 10px;
  
 }
@@ -1058,7 +1063,11 @@ gap: 20px;
   transform: .3s ease;
   background-color: #3586ff;
 }
-.submit:hover {
+.submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.active {
   background-color: #3586ff;
 }
 

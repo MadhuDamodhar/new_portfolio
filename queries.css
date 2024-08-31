@@ -253,7 +253,7 @@
   home{
    
     flex-direction: column;
-    height:120vh;
+    height:135vh;
   }
   .left-container{
     padding-top: 170px;
@@ -261,13 +261,13 @@
     padding-right: 10px;
   }
   .left-container > :nth-child(1){
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
    
   }
   .left-container > :nth-child(2) {
     font-size: 1.9rem;
-   margin-top: 0px;
+   margin-top: -0px;
    font-weight: 900;
   }
   .intro {
@@ -284,11 +284,11 @@
   }
   .right-intro > img {
     object-fit: cover;
-    margin-top: -140px;
+    margin-top: -10px;
     height: 700px;
     width: 1100px; 
     margin-left: -140px;
-
+padding-bottom: 50px;
   }
   
 

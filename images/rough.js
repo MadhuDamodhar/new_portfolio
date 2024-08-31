@@ -1,4 +1,3 @@
-// Function to send the email
 function sendEmail() {
     emailjs.init("GZMwJaV9Gliwt4JNR");
 
@@ -7,27 +6,23 @@ function sendEmail() {
 
     // Handle the form submission
     async function handleSubmit(e) {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault();
 
         try {
-            // Send the form data using EmailJS
             const result = await emailjs.sendForm(
                 "service_0porjrq",
                 "template_dofsbbl",
                 form
             );
-            statusMessage.textContent = "Email Sent Successfully!";
+            statusMessage.textContent = "Email Sent Successfully! Thank you ...";
             console.log(result.text);
-            form.reset(); // Reset the form fields
+            form.reset();
         } catch (error) {
             statusMessage.textContent = "Something went wrong!";
             console.error(error.text);
         }
     }
 
-    // Trigger the form submission when the form is submitted
-    form.addEventListener('submit', handleSubmit);
+    // Trigger the form submission
+    handleSubmit(new Event('submit'));
 }
-
-// Initialize the sendEmail function
-sendEmail();

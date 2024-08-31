@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="ContactMe.css">
+</head>
+<body>
+    <section id="contact" class="contact">
+        <form class="form" id="contactForm">
+            <h1>Contact me</h1>
+            <span id="status">
+                <h3 id="statusMessage">Please fill out the form to discuss any work opportunities.</h3>
+            </span>
+            <input required type="text" class="name" autocomplete="off" name="to_name" placeholder="Enter your name...">
+            <input required type="email" class="email" autocomplete="off" name="from_name" placeholder="Enter your email...">
+            <textarea required class="msg" autocomplete="off" name="message" placeholder="Message..."></textarea>
+            <div class="send">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div class="footer">
+            <p>Copyrights &#169; 2024 Madhu Damodhar, All Rights reserved</p>
+        </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="rough.js"></script>
+</body>
+</html>
