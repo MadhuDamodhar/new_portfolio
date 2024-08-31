@@ -264,7 +264,7 @@ section .air.air4{
 }
 .nav-links a:hover{
   color: deepskyblue;
-  transition: all 0.3s ease-in-out;
+  transition: all .1s ease-in-out;
 
   
 }
@@ -1061,15 +1061,14 @@ gap: 20px;
   color: #fff;
   font-size: 16px;
   transform: .3s ease;
-  background-color: #3586ff;
+  background-color: white;
+  color: black;
 }
-.submit:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.submit:active {
+  background-color: rgba(255, 255, 255, 0.67);
+  color: black;
 }
-.active {
-  background-color: #3586ff;
-}
+
 
 @keyframes pulse {
   from {
